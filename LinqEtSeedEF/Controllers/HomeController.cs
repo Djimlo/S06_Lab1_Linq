@@ -159,7 +159,14 @@ namespace LinqEtSeedEF.Controllers
             var listLinq = _context.Restaurant.ToList();
 
             var resto = listLinq.Where(r => r.Nom == nomDuResto);
+
             bool? optionVege = true;
+           
+
+            foreach (Restaurant restaurant in resto)
+            {
+               
+            }
 
             // TODO: Est-ce que le restaurant a UNIQUEMENT des plats végés?
             bool ? toutVege = true;
