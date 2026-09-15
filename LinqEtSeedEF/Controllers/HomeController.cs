@@ -174,7 +174,7 @@ namespace LinqEtSeedEF.Controllers
             // TODO: Même chose, mais avec Linq
             // Utilisez Where, All et Any
             bool? optionVegeLinq = resto.Any(r => r.Plats.Any(p => p.Vegetarien));
-            bool? toutVegeLinq = resto.All(r => r.Plats.All(p => p.Vegetarien)); 
+            bool? toutVegeLinq = resto.All(r => r.Plats.All(p => p.Vegetarien));
 
             return new VegetarienViewModel("Status végétarien du restaurant : " + nomDuResto, toutVege, toutVegeLinq, optionVege, optionVegeLinq);
         }
